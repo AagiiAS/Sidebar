@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+}
+.main-container {
+  justify-content: space-between;
+  position: relative;
+}
+.sidebar-container {
+  width: 256px;
+  height: 100vh;
+  background-color: white;
+}
+.sidebar-header {
+  padding: 10px 8px;
+  gap: 15px;
+  align-items: center;
+}
+.profile-img {
+  img {
+    border-radius: 50%;
+  }
+}
+.sidebar-container.wrap {
+  width: 60px;
+}
+.sidebar-container.wrap .text {
+  display: none;
+}
+.sidebar-container.wrap .menu,
+.sidebar-container.wrap .second-menu,
+.sidebar-container.wrap .profile-img {
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-container.wrap .underline {
+  width: 40px;
+  justify-content: center;
+}
+body {
+  background-color: #5b6677;
+}
+
+.profile-info {
+  flex-direction: column;
+  gap: 5px;
+}
+.fullname {
+  font-weight: bold;
+}
+.arrow-btn {
+  border: none;
+  background-color: white;
+  margin-left: 20px;
+}
+.position-btn {
+  /* margin-left: 10px; */
+  position: absolute;
+  left: 50px;
+  top: 55px;
+  background-color: white;
+  stroke: #f6f6f6;
+  width: 12px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  z-index: 1;
+}
+.menu,
+.second-menu {
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: center; */
+  padding: 10px 10px;
+}
+.sub-name {
+  font-size: 10px;
+  color: #757575;
+}
+.dashboard,
+.audience,
+.post {
+  gap: 15px;
+}
+.underline {
+  width: 12rem;
+  height: 0.01rem;
+  background: lightgray;
+  margin-left: 10px;
+}
+.logout {
+  padding: 10px 20px;
+  margin-top: 50vh;
+  gap: 15px;
+  color: red;
+}
+.logout-btn {
+  border: none;
+  background-color: transparent;
+  color: red;
+}
+.menu-btn {
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  color: white;
+  margin-right: 20px;
+}
+.hidden {
+  display: hidden;
+}
+.show {
+  display: block;
+}

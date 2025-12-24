@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container flex">
+      <div class="sidebar-container">
+        <div class="sidebar-header flex">
+          <div class="profile-img">
+            <img
+              src="./images/profile.jpeg"
+              width="50px"
+              height="50px"
+              alt="profile"
+            />
+          </div>
+          <div class="profile-info text flex">
+            <p>Product manager</p>
+            <span class="fullname"> <p>Enjii EZ</p></span>
+          </div>
+          <div class="close-btn">
+            <button class="arrow-btn">
+              <span class="xmark"
+                ><i id="icon" class="fa-solid fa-angle-left"></i
+              ></span>
+              <!-- <span class="xmark"><i class="fa-solid fa-angle-right"></i></span> -->
+            </button>
+          </div>
+        </div>
+        <div class="underline"></div>
+        <div class="menu flex">
+          <p class="sub-name">MAIN</p>
+          <div class="dashboard flex">
+            <i class="fa-solid fa-house icons"></i>
+            <span class="text">Dashboard</span>
+          </div>
+          <div class="audience flex">
+            <i class="fa-solid fa-user icons"></i>
+            <span class="text">Audience</span>
+          </div>
+          <div class="post flex">
+            <i class="fa-solid fa-envelopes-bulk icons"></i>
+            <span class="text">Posts</span>
+          </div>
+        </div>
+        <div class="underline"></div>
+        <div class="second-menu flex">
+          <p class="sub-name">SETTINGS</p>
+          <div class="dashboard flex">
+            <i class="fa-solid fa-gear icons"></i>
+            <span class="text">Settings</span>
+          </div>
+        </div>
+        <div class="logout flex">
+          <button class="logout-btn">
+            <i class="fa-solid fa-arrow-right-from-bracket icons"></i>
+          </button>
+
+          <span class="text">Logout</span>
+        </div>
+      </div>
+
+      <div class="show-btn">
+        <button class="menu-btn"><i class="fa-solid fa-grip-lines"></i></button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
