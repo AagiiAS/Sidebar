@@ -4,23 +4,33 @@ const sidebar = document.querySelector(".sidebar-container");
 const icon = document.getElementById("icon");
 
 const closeDisplay = () => {
-  sidebar.classList.toggle("wrap");
+  const isWrap = sidebar.classList.contains("wrap");
 
-  icon.classList.replace("fa-angle-left", "fa-angle-right");
-  icon.classList.add("position-btn");
-};
-
-const showSidebar = () => {
-  if (icon.classList.contains("fa-angle-rigth")) {
+  if (isWrap) {
     sidebar.classList.remove("wrap");
     icon.classList.replace("fa-angle-right", "fa-angle-left");
+    icon.classList.remove("position-btn");
+  } else {
+    sidebar.classList.toggle("wrap");
+
+    icon.classList.replace("fa-angle-left", "fa-angle-right");
+    icon.classList.add("position-btn");
   }
 };
+
+// const showSidebar = () => {
+//   if (icon.classList.contains("fa-angle-right")) {
+//     sidebar.classList.remove("wrap");
+//     icon.classList.replace("fa-angle-right", "fa-angle-left");
+//     icon.classList.remove("position-btn");
+//   }
+// };
 const showDisplay = () => {
   sidebar.classList.remove("wrap");
   icon.classList.replace("fa-angle-right", "fa-angle-left");
+  icon.classList.remove("position-btn");
 };
 
 closeBtn.addEventListener("click", closeDisplay);
 menuBtn.addEventListener("click", showDisplay);
-icon.addEventListener("click", showSidebar);
+// icon.addEventListener("click", showSidebar);
